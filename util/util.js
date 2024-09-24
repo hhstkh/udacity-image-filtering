@@ -44,7 +44,7 @@ import fetch from "node-fetch";
 }
 
 export function isValidImageUrl(inputURL) {
-  const jpgUrlRegex = /https?:\/\/(www\.)?([a-zA-Z0-9\-_]+\.[a-zA-Z]{2,})(:[0-9]{1,5})?(\/[^\s]*\.jpg)/g;
+  const jpgUrlRegex = /https?:\/\/(www\.)?([a-zA-Z0-9\-_.]+\.[a-zA-Z]{2,})(:[0-9]{1,5})?(\/[^\s]*\.jpg)/g;
 
   return jpgUrlRegex.test(inputURL);
 
